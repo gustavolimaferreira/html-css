@@ -10,6 +10,11 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
     color:white;
