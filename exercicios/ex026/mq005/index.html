@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <header>
+    <header>       
         <h1>Meu site</h1>
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,12 +24,21 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sed minus eligendi, temporibus incidunt animi earum quo esse? Laborum odio incidunt temporibus rem, harum atque nostrum fugit praesentium. Rerum, nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio dolorem distinctio quibusdam fugit unde corporis, ducimus tempore quisquam autem? Repudiandae iste beatae praesentium quia sit, autem deleniti quidem illo quod maxime facere accusamus, aliquid reprehenderit, nemo facilis repellendus officia amet id adipisci cupiditate soluta blanditiis itaque molestiae. Officiis ipsam commodi totam debitis provident quam iusto impedit eius? Qui possimus dolorum quidem corrupti consequuntur explicabo porro minima, alias omnis aliquid at, delectus quae laudantium nihil distinctio quam accusantium placeat error a pariatur beatae ea nulla. Qui deserunt dicta optio modi velit! Hic explicabo aspernatur suscipit quam temporibus. Ipsa obcaecati sapiente quaerat ducimus, placeat quam corporis quod. Quas nesciunt nobis voluptates similique. Natus fugiat nulla provident error mollitia dolores vitae tenetur, veniam adipisci laborum ex quae explicabo nisi possimus quidem voluptatum! Tenetur non quis voluptate dolor, libero voluptatum. Error corrupti perspiciatis aut ducimus assumenda, deserunt in atque ex tenetur adipisci inventore sunt reprehenderit quis laborum dignissimos! In, quidem nesciunt architecto deleniti ullam accusamus quaerat ipsam aut fugit necessitatibus voluptas veniam sequi dolore ipsum ut asperiores aperiam eum dolorem distinctio alias! Mollitia corporis repudiandae quos ullam ea laborum, expedita ducimus voluptatum amet odio accusantium, tenetur fuga, error alias ipsum quod eaque nam.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officiis repudiandae molestiae nobis quidem vero pariatur, explicabo aspernatur possimus mollitia atque eveniet fugiat iste, numquam doloremque dolorem! Vero, maxime mollitia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iure aliquid est quia animi repudiandae, sed totam ratione similique in perferendis commodi et quisquam excepturi. Recusandae perspiciatis consequuntur maiores tempore voluptatum velit sit fuga inventore, necessitatibus, architecto quis quas soluta laborum beatae dolorem quasi saepe. Sunt molestiae, cumque pariatur soluta facilis optio excepturi aliquid, harum, inventore in aperiam! Repudiandae ipsum provident veritatis placeat maxime totam excepturi magnam autem culpa, beatae ad ex itaque impedit voluptatibus quasi. Accusamus, vel perspiciatis. Culpa aliquam voluptatem neque iste atque. Repellat eligendi dolore id quo. Quisquam, quibusdam nostrum. Fugiat est atque error, ea eligendi illo.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, excepturi labore ex deserunt nulla rem rerum non, totam perspiciatis enim dolores fugiat? Rem a atque maxime dolorum delectus ipsa in!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi alias provident voluptates assumenda officiis totam quos, autem reiciendis at impedit repellendus beatae? Earum quos fugit commodi, ex quis neque minima ratione maxime perferendis deserunt porro maiores itaque numquam rerum molestiae assumenda corporis hic magnam fugiat blanditiis! Minus perferendis, illo harum explicabo sed sint corrupti, odit accusamus mollitia error esse, commodi vero suscipit tempora velit ut provident inventore culpa eveniet nesciunt. Voluptate, porro! Nostrum, nihil. Ea asperiores non labore illo.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
