@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,13 +18,28 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
+    /* border: 1px dotted black; */
+    flex: 0 0 200px;
     text-shadow: 2px 2px 1px black;
 }
 
-header > nav > ul > a {
+header > nav {
+    /* border: 1px dotted black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
     background-color: black;
     color: white;
     padding: 10px;
@@ -32,15 +47,13 @@ header > nav > ul > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
-    transition: .5s;
-    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);    
 }
 
-header > nav > ul > a:hover {
-    background-color: rgb(255, 255, 255);
+header > nav > a:hover {
+    background-color:white;
     color: black;
-    
+    transition: background-color .5s;
 }
 
 main {
